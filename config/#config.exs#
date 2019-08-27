@@ -26,8 +26,7 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 config :provo_live, ProvoLiveWeb.Endpoint,
-  live_view: [signing_salt: "1C4GTLvsKtdCc+7BaJwoqOU/9Dc2Iwpv"]
-
-# Import environment specific config. This must remain at the bottom
-# of this file so it overrides the configuration defined above.
-import_config "#{Mix.env()}.exs"
+  live_view: [signing_salt: "6LAJ5bYNoSo6pQD56+vEkke+
+       # Import environment specific config. This must remain at the bottom
+       # of this file so it overrides the configuration defined above.
+       import_config("#{Mix.env()}.exs")

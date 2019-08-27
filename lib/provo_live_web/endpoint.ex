@@ -1,6 +1,8 @@
 defmodule ProvoLiveWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :provo_live
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", ProvoLiveWeb.UserSocket,
     websocket: true,
     longpoll: false

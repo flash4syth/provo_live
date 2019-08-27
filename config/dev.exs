@@ -61,7 +61,8 @@ config :provo_live, ProvoLiveWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/provo_live_web/{live,views}/.*(ex)$",
-      ~r"lib/provo_live_web/templates/.*(eex)$"
+      ~r"lib/provo_live_web/templates/.*(eex)$",
+      ~r"lib/provo_live_web/live/.*(ex)$"
     ]
   ]
 
