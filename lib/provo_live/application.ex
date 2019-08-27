@@ -9,7 +9,7 @@ defmodule ProvoLive.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      ProvoLive.Repo,
+      # ProvoLive.Repo,
       # Start the endpoint when the application starts
       ProvoLiveWeb.Endpoint
       # Starts a worker by calling: ProvoLive.Worker.start_link(arg)
