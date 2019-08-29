@@ -8,7 +8,7 @@ defmodule ProvoLiveWeb.MyLiveViewTest do
 
   test "disconnected and connected mount", %{conn: conn} do
     conn = get(conn, "/mylive")
-    assert html_response(conn, 200) =~ "<h1>My Live</h1>"
+    assert html_response(conn, 200) =~ "<p>Hello Provo Live!</p>"
 
     {:ok, view, html} = live(conn)
   end

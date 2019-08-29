@@ -18,6 +18,7 @@ defmodule ProvoLiveWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/mylive", PageController, :mylive
   end
 
   # Other scopes may use custom stacks.
