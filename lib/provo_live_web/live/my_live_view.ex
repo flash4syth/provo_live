@@ -10,7 +10,14 @@ defmodule ProvoLiveWeb.MyLiveView do
       <div>
         <h1>Provo Live View</h1>
         <p><%= @my_message %></p>
+        <button phx-click="change">
+        Send New Message
+        </button>
       </div>
     """
+  end
+
+  def handle_event("change_message", _value, socket) do
+    {:noreply, assign(socket, my_message: "New Message")}
   end
 end
